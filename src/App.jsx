@@ -15,14 +15,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Routes>
+        <Routes>
 
-        <Route path="/" element={<AddStud />} />
-        <Route path="/search" element={<SearchStud />} />
-        <Route path="/delete" element={<DeleteStud />} />
-        <Route path="/view" element={<ViewAllStud />} />
+          <Route path="/" element={<AddStud />} />
+          <Route path="/search" element={<SearchStud />} />
+          <Route path="/delete" element={<DeleteStud />} />
+          <Route path="/view" element={<ViewAllStud />} />
 
-      </Routes>
+        </Routes>
       </BrowserRouter>
     </>
   )
