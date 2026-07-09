@@ -17,46 +17,46 @@ const students = [
 const ViewAllStud = () => {
   return (
     <>
-    <StudHeader />
-    <div className="container mt-5">
-      <h2 className="text-center mb-4">View All Students</h2>
+      <StudHeader />
+      <div className="container mt-5">
+        <h2 className="text-center mb-4">View All Students</h2>
 
-      <div className="table-responsive">
-        <table className="table table-bordered table-striped table-hover">
-          <thead className="table-dark">
-            <tr>
-              <th>Admission No</th>
-              <th>Name</th>
-              <th>DOB</th>
-              <th>Gender</th>
-              <th>Class</th>
-              <th>Section</th>
-              <th>Parent</th>
-              <th>Contact</th>
-              <th>Email</th>
-              <th>Address</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            {students.map((student) => (
-              <tr key={student.admNo}>
-                <td>{student.admNo}</td>
-                <td>{student.name}</td>
-                <td>{student.dob}</td>
-                <td>{student.gender}</td>
-                <td>{student.grade}</td>
-                <td>{student.section}</td>
-                <td>{student.parent}</td>
-                <td>{student.phone}</td>
-                <td>{student.email}</td>
-                <td>{student.address}</td>
+        <div className="table-responsive">
+          <table className="table table-bordered table-striped table-hover">
+            <thead className="table-dark">
+              <tr>
+                <th>Admission No</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Class</th>
+                <th>Section</th>
+                <th>Parent</th>
+                <th>Contact</th>
+                <th>Email</th>
+                <th>Address</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+
+            <tbody>
+              {students.map((student) => (
+                <tr key={student.admNo}>
+                  <td>{student.admNo}</td>
+                  <td>{student.name}</td>
+                  <td>{student.dob}</td>
+                  <td>{student.gender}</td>
+                  <td>{student.grade}</td>
+                  <td>{student.section}</td>
+                  <td>{student.parent}</td>
+                  <td>{student.phone}</td>
+                  <td>{student.email}</td>
+                  <td>{student.address}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
     </>
   )
 }
