@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import StudHeader from './StudHeader'
 
-const students = [
+const ViewAllStud = () => {
+  const [students,changeData] = useState (
+    [
   { admNo: "S101", name: "Rahul Sharma", dob: "12-05-2006", gender: "Male", grade: "10", section: "A", parent: "Ramesh Sharma", phone: "9876543210", email: "rahul@gmail.com", address: "Kochi" },
   { admNo: "S102", name: "Anjali Nair", dob: "20-08-2007", gender: "Female", grade: "9", section: "B", parent: "Suresh Nair", phone: "9876543211", email: "anjali@gmail.com", address: "Trivandrum" },
   { admNo: "S103", name: "Arjun Das", dob: "15-03-2006", gender: "Male", grade: "10", section: "A", parent: "Ravi Das", phone: "9876543212", email: "arjun@gmail.com", address: "Thrissur" },
@@ -13,8 +15,7 @@ const students = [
   { admNo: "S109", name: "Nikhil Menon", dob: "11-12-2006", gender: "Male", grade: "10", section: "A", parent: "Menon", phone: "9876543218", email: "nikhil@gmail.com", address: "Ernakulam" },
   { admNo: "S110", name: "Aparna S", dob: "08-04-2007", gender: "Female", grade: "9", section: "C", parent: "Sasidharan", phone: "9876543219", email: "aparna@gmail.com", address: "Malappuram" }
 ]
-
-const ViewAllStud = () => {
+  )
   return (
     <>
       <StudHeader />
